@@ -1,0 +1,11 @@
+[package]
+name = "jinpyok_input"
+version = "0.1.0"
+edition = "2021"
+author = ["Kim_Jin_Pyo"]
+license = "MIT"
+description = "My comfortable input methods"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
