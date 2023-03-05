@@ -3,7 +3,7 @@
 use std::io::stdin;
 
 // When input multiple data, return Vec<String>.. last string probably has '\n'
-fn input_multiple(comment: &str) -> Vec<String> {
+pub fn input_multiple(comment: &str) -> Vec<String> {
     println!("{}", comment);
     let mut tmp = String::new();
     match stdin().read_line(&mut tmp) {
@@ -15,7 +15,7 @@ fn input_multiple(comment: &str) -> Vec<String> {
 }
 
 // When input one string
-fn input_string(comment: &str) -> String {
+pub fn input_string(comment: &str) -> String {
     println!("{}", comment);
     let mut tmp = String::new();
     match stdin().read_line(&mut tmp) {
@@ -27,7 +27,7 @@ fn input_string(comment: &str) -> String {
 }
 
 // when input one of i8 ~ i64, u8 ~ u64, isize, usize
-fn input_s<T: std::str::FromStr>(comment: &str) -> T {
+pub fn input_s<T: std::str::FromStr>(comment: &str) -> T {
     println!("{}", comment);
     let mut tmp = String::new();
     match stdin().read_line(&mut tmp) {
